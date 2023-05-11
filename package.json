@@ -1,0 +1,64 @@
+{
+  "name": "Ray",
+  "private": true,
+  "description": "A ray of light in dark debugging times",
+  "version": "2.4.0",
+  "main": "./dist/main.js",
+  "author": {
+    "name": "Spatie",
+    "email": "info@spatie.be"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mdx-js/loader": "^2.1.5",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@sentry/electron": "^3.0.2",
+    "@types/mdx": "^2.0.3",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "canvas-confetti": "^1.5.1",
+    "chai": "^4.2.0",
+    "cheerio": "^1.0.0-rc.5",
+    "cors": "^2.8.5",
+    "date-fns": "^2.16.1",
+    "electron-store": "^8.0.1",
+    "express": "^4.17.1",
+    "highlight.js": "^11.1.0",
+    "immer": "^7.0.9",
+    "lodash": "^4.17.20",
+    "md5": "^2.3.0",
+    "react": "^16.13.1",
+    "react-collapsible": "^2.8.3",
+    "react-dom": "^16.13.1",
+    "react-json-view": "^1.21.1",
+    "react-redux": "^7.2.5",
+    "react-select": "^3.1.1",
+    "react-virtuoso": "^1.9.3",
+    "sql-formatter": "^2.3.3",
+    "ssh2": "^1.11.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "untildify": "^4.0.0"
+  },
+  "scripts": {
+    "prettify": "prettier --write dist/main.js"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^24.3.0",
+    "prettier": "^2.8.8"
+  }
+}

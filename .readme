@@ -1,0 +1,10 @@
+## install 
+   - npm install --save-dev electron
+   - run : electron path_of_the_project/dist/main.js
+   - or you can add shortcut in .bashrc like this : alias ray='electron path_of_the_project/dist/main.js'
+
+
+## start 
+    - just use ray in terminal
+    - or electron path_of_the_project/dist/main.js
+
